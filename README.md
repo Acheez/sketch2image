@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to convert room interior sketches into realistic images using deep learning models, specifically leveraging the Pix2Pix architecture. The main components of this project include a Dockerized Streamlit application for running the model inference and various Jupyter notebooks for data preparation, augmentation, scraping, and model training.
+This project aims to convert room interior sketches into realistic images using deep learning models, specifically leveraging the Pix2Pix architecture.Additionally, it includes a mode for converting images to sketches.  The main components of this project include a Dockerized Streamlit application for running the model inference and various Jupyter notebooks for data preparation, augmentation, scraping, and model training.
 
 ## Project Structure
 
@@ -45,9 +45,19 @@ To run the application, you need to have Docker installed on your system.
 1. Clone the repository to your local machine.
 2. Build the Docker images using Docker Compose:
 ```
-docker-compose build
+docker compose build 
 ```
+OR 
+
+```
+docker-compose build 
+```
+
 3. Start the application
+```
+docker compose up
+```
+OR
 ```
 docker-compose up
 ```
