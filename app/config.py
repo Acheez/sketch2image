@@ -4,4 +4,4 @@ IMG_WIDTH = 256
 IMG_HEIGHT = 256
 OUTPUT_CHANNELS = 3
 
-CHECKPOINT_DIR = "/Users/archili_robakidze/Projects/sketch2image/checkpoints/pix2pix"
+CHECKPOINT_DIR = "/app/checkpoints"
