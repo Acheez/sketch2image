@@ -103,12 +103,12 @@ def sobel_edges(blurred_img):
 
 def generate_sketches(image_path, blur_ksize=5):
     img = cv2.imread(image_path)
-    img = resize_image(img, IMG_WIDTH, IMG_HEIGHT)  # Resize image to 256x256
 
     gray_img = grayscale(img)
     blurred_img = blur(gray_img, blur_ksize)
     edges = sobel_edges(blurred_img)
     sketch = 255 - edges  
+    img = resize_image(img, IMG_WIDTH, IMG_HEIGHT)  
 
     return sketch
 
